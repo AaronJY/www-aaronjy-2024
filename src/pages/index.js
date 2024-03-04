@@ -1,14 +1,14 @@
-import Head from "next/head";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ExternalLink from "@/components/ExternalLink";
+import Head from 'next/head'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import ExternalLink from '@/components/ExternalLink'
 
-export default function Home() {
+export default function Home () {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <Header />
@@ -48,7 +48,7 @@ export default function Home() {
           film.&quot;
         </p>
         <p>
-          <ExternalLink href="https://letterboxd.com/aaronyarbz/">
+          <ExternalLink href='https://letterboxd.com/aaronyarbz/'>
             See what I&apos;ve watched recently.
           </ExternalLink>
         </p>
@@ -59,7 +59,7 @@ export default function Home() {
           I&apos;ve been working on here!
         </p>
         <p>
-          <ExternalLink href="https://github.com/AaronJY">
+          <ExternalLink href='https://github.com/AaronJY'>
             Check out what I&apos;ve been working on.
           </ExternalLink>
         </p>
@@ -70,7 +70,7 @@ export default function Home() {
           have to be 😩
         </p>
         <p>
-          <ExternalLink href="https://www.linkedin.com/in/aaronjyarborough/">
+          <ExternalLink href='https://www.linkedin.com/in/aaronjyarborough/'>
             Be creepy and stalk me on LinkedIn.
           </ExternalLink>
         </p>
@@ -81,7 +81,7 @@ export default function Home() {
           and book a class if it suits you.
         </p>
         <p>
-          <ExternalLink href="https://tutoring.yarbz.digital">
+          <ExternalLink href='https://tutoring.yarbz.digital'>
             Read more about my tutoring side-gig.
           </ExternalLink>
         </p>
@@ -89,5 +89,5 @@ export default function Home() {
 
       <Footer />
     </>
-  );
+  )
 }

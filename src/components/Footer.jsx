@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
 
-function Footer() {
+function Footer () {
   return (
     <footer>
       <nav>
         <ul>
           <li>
-            <a href="#">back to top</a>
+            <a href='#'>back to top</a>
           </li>
           <li>
-            <a href="mailto:me@aaronjy.me">send me an email</a>
+            <a href='mailto:me@aaronjy.me'>send me an email</a>
           </li>
         </ul>
       </nav>
@@ -18,19 +18,19 @@ function Footer() {
         <ul>
           <li>
             <small>
-              2024 Aaron Yarborough, made with{" "}
+              2024 Aaron Yarborough, made with{' '}
               <a
-                target="_blank"
-                rel="nofollow noopener"
-                href="https://nextjs.org/"
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+                href='https://nextjs.org/'
               >
                 Next.js
-              </a>{" "}
-              and{" "}
+              </a>{' '}
+              and{' '}
               <a
-                target="_blank"
-                rel="nofollow noopener"
-                href="https://yegor256.github.io/tacit/"
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+                href='https://yegor256.github.io/tacit/'
               >
                 Tacit
               </a>
@@ -39,7 +39,7 @@ function Footer() {
         </ul>
       </nav>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
-export default function Writing() {
+export default function Writing () {
   return (
     <>
       <Header />
@@ -11,7 +11,7 @@ export default function Writing() {
       <section>
         <i>Nothing to see here yet!</i>
       </section>
-      <Footer/>
+      <Footer />
     </>
-  );
+  )
 }
