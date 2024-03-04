@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * Sets default values for external links on an anchor tag.
+ * @returns 
+ */
 function ExternalLink({
   href,
   rel = "nofollow noopener",

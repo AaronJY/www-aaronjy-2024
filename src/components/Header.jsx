@@ -12,6 +12,9 @@ function Header() {
           <li>
             <Link href={"/writing"}>writing</Link>
           </li>
+          <li>
+            <Link href={"/recipes"}>recipes</Link>
+          </li>
         </ul>
       </nav>
     </header>
