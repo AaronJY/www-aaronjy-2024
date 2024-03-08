@@ -1,6 +1,6 @@
-import Head from "next/head";
-import ExternalLink from "@/components/ExternalLink";
-import DefaultLayout from "@/layouts/DefaultLayout/DefaultLayout";
+import Head from 'next/head'
+import ExternalLink from '@/components/ExternalLink'
+import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 
 export default function Home () {
   return (
@@ -33,26 +33,26 @@ export default function Home () {
         <ul>
           <li>
             <strong>
-              <ExternalLink href="https://letterboxd.com/aaronyarbz/">
+              <ExternalLink href='https://letterboxd.com/aaronyarbz/'>
                 Letterboxd
               </ExternalLink>
-            </strong>{" "}
+            </strong>{' '}
             is a social platform for film lovers to rate, review, and discover
             movies, akin to &quot;Goodreads for film.&quot;
           </li>
           <li>
             <strong>
-              <ExternalLink href="https://github.com/AaronJY">
+              <ExternalLink href='https://github.com/AaronJY'>
                 GitHub
               </ExternalLink>
-            </strong>{" "}
+            </strong>{' '}
             is a web-based platform for version control and collaboration on
             software development projects. Find out what I&apos;ve been working
             on here!
           </li>
           <li>
             <strong>
-              <ExternalLink href="https://www.linkedin.com/in/aaronjyarborough/">
+              <ExternalLink href='https://www.linkedin.com/in/aaronjyarborough/'>
                 LinkedIn
               </ExternalLink>
             </strong>
@@ -72,5 +72,5 @@ export default function Home () {
         </p> */}
       </section>
     </DefaultLayout>
-  );
+  )
 }
