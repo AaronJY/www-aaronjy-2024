@@ -93,6 +93,13 @@ export default function Home () {
           </ExternalLink>
         </p> */}
       </section>
+
+      <section>
+        <h2>About this site</h2>
+        <p>www.aaronjy.me is a static site (i.e. a bunch of HTML, JS, CSS and image files) written in JavaScript using Next.js. Tacit is being used as a micro CSS framework, and various smaller bits of custom CSS have been applied on top.</p>
+        <p>The site is hosted inside a Google Cloud Storage bucket with a load balancer sat in front of it. The load balancer is required as Cloud Storage doesn&apos;t support a) custom domains, b) HTTPS out of the box or c) a global CDN solution.</p>
+        <p>One of the biggest benefits of a website made of simple static files and assets is that I can deploy it easily, almost anywhere, and for very little money. Obviously, hosting cost is mostly almost relative to the amount of data transferred (i.e. the number of visitors accessing your site and downloading its assets), but I anticipate paying only a few pennies a month as things stand (unless my little site becomes incredibly popular overnight for some bizarre reason...)</p>
+      </section>
     </DefaultLayout>
   )
 }
