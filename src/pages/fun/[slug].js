@@ -28,8 +28,6 @@ export function getStaticPaths () {
     }
   }))
 
-  console.log(paths)
-
   return {
     fallback: false,
     paths
@@ -38,6 +36,7 @@ export function getStaticPaths () {
 
 export function getStaticProps ({ params }) {
   const path = `./content/fun/${params.slug}.md`
+
   const entry = getMarkdownEntry(path)
   return { props: { ...entry } }
 }

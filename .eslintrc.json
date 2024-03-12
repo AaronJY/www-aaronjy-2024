@@ -1,6 +1,7 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "@stylistic/jsx/jsx-pascal-case": "off"
+    "@stylistic/jsx/jsx-pascal-case": "off",
+    "@next/next/no-html-link-for-pages": "off"
   }
 }

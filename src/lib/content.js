@@ -13,7 +13,7 @@ export function getMarkdownEntry (path) {
   const converter = new showdown.Converter()
   const html = converter.makeHtml(body)
 
-  const slug = toSlug(path.substring(path.lastIndexOf('/')))
+  const slug = toSlug(path.substring(path.lastIndexOf('/') + 1))
 
   return {
     attributes,
