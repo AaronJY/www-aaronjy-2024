@@ -8,17 +8,17 @@ function CV ({ competencies, education, certifications, languages, experience })
       <div>
         <h2>Core competencies</h2>
         <ul>
-          {competencies.sort().map(c => <li key={c}>{c}</li>)}
+          {competencies.sort().map((c, i) => <li key={i}>{c}</li>)}
         </ul>
 
         <h2>Certifications</h2>
         <ul>
-          {certifications.sort().map(c => <li key={c}>{c}</li>)}
+          {certifications.sort().map((c, i) => <li key={i}>{c}</li>)}
         </ul>
 
         <h2>Languages</h2>
         <ul>
-          {languages.sort().map(c => <li key={c}>{c.name} - {c.proficiency}</li>)}
+          {languages.sort().map((c, i) => <li key={i}>{c.name} - {c.proficiency}</li>)}
         </ul>
 
         <h2>Education history</h2>

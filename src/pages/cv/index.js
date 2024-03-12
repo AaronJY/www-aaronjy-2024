@@ -15,7 +15,7 @@ function CVPage ({
 }) {
   return (
     <DefaultLayout>
-      <NextSeo title='CV'/>
+      <NextSeo title='CV' />
       <section>
         <h1>CV</h1>
       </section>
