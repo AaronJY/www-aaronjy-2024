@@ -1,0 +1,3 @@
+.footer nav:first-child a {
+  text-transform: lowercase;
+}

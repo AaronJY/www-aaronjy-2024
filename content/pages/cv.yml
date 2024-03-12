@@ -1,0 +1,163 @@
+competencies:
+  - Software Development
+  - Software Architecture
+  - UI/UX Design
+  - Full-Stack Development
+  - Team Leadership
+  - Recruitment and Onboarding
+  - Web Application Development
+  - Cloud Hosting (AWS
+  - GCP)
+  - Database Management
+  - User Interface Design
+  - Project Management
+education:
+  - 10 GCSEs @ Duchess Community High School
+certifications:
+  - Sitecore Professional Developer Certification (Sitecore 8.2) - Aug. 2017
+languages:
+  - name: English
+    proficiency: Native
+  - name: German
+    proficiency: Professional Working Proficiency
+  - name: Arabic (Levantine)
+    proficiency: Elementary
+experience:
+  - position: Software Development Tutor
+    employer: Yarbz Digital Ltd
+    start: Sep. 2023
+    end: Mar. 2024
+    desc: I teach students of all levels modern software development, including
+      coding fundamentals, computer science theory and modern software
+      technologies. I also help them prepare for tech interviews!
+  - position: Freelance Software Consultant
+    employer: Yarbz Digital Ltd
+    start: Aug. 2021
+    end: Mar. 2024
+    desc: >-
+      * Designed and developed the front-end and back-end of the innovative
+      recruitment platform "Radr" using Angular 13, Node.js, TypeScript,
+      MongoDB, and hosted on Google Cloud Platform.
+
+      * Developed Fifty Five and Five's flagship website (fiftyfiveandfive.com) using PHP, WordPress, and Tailwind, enhancing its online presence.
+
+      * Built front-end of sportank.com, a dynamic social network catering to American Football enthusiasts and athletes, using Angular 10, Tailwind, SCSS, and TypeScript.
+
+      * Designed and built a proof-of-concept using Angular, Node.js, and gRPC, enabling real-time voice input streaming from web browsers to medical speech recognition software, leading to its active use by doctors for efficient communication.
+
+      * Maintained and improved the Integra Planner event management platform used by thousands of people for multi-day events, specifically for GARA Choruses.
+
+      * Enabled efficient event planning and management by utilizing Angular, Ionic for mobile apps, AWS, SQL Server, and .NET Core.
+
+
+      **Skills:** ASP.NET · Amazon Elastic Container Registry (ECR) · Angular · TypeScript · Amazon ECS · Python (Programming Language) · Node.js · ASP.NET MVC · Content Management Systems (CMS) · Amazon Web Services (AWS) · Next.js · Microsoft Azure · Git · React.js · C# · Full-Stack Development · Umbraco · WordPress · Web Development · JavaScript · Front-End Development · MySQL · Microsoft SQL Server · Cloud Development · PHP · NoSQL · AWS Lambda · HTML · Microservices · Technical Requirements · Firebase · ASP.NET Core · Agile Methodologies · Google Cloud Platform (GCP) · MongoDB · User Interface Programming
+  - position: Contract Software Engineer
+    employer: The Data Shed
+    start: Jan. 2023
+    end: Aug. 2023
+    desc: >-
+      * Facilitated the recovery of funds for more than 100,000 customers
+      affected by loan mis-selling by developing a robust web application using
+      Next.js, TypeScript, React, Node.js, AWS Cognito, and AWS ECS.
+
+      * Implemented a wide range of features, including voting, bank details collection, messaging functionality, claims processing, and document management.
+
+
+      **Skills:** Amazon Elastic Container Registry (ECR) · TypeScript · Amazon ECS · Tailwind CSS · Node.js · Amazon Web Services (AWS) · Next.js · React.js · docker · Front-End Development · NoSQL · AWS Lambda · HTML · Agile Methodologies · User Interface Programming
+  - position: Software Architecht
+    employer: T101
+    start: Sep. 2020
+    end: Jul. 2021
+    desc: >-
+      * As well as fulfilling the engineering responsibilities required by my
+      previous role, my responsibilities now additionally entail designing,
+      documenting and leading on architectural changes.As well as fulfilling the
+      engineering responsibilities required by my previous role, my
+      responsibilities now additionally entail designing, documenting and
+      leading on architectural changes.
+
+
+      **Skills:** ASP.NET · Angular · TypeScript · Amazon ECS · ASP.NET MVC · Kubernetes · Amazon Web Services (AWS) · Git · C# · Full-Stack Development · Web Development · JavaScript · Front-End Development · MySQL · Microsoft SQL Server · Cloud Development · NoSQL · HTML · .NET Core · Microservices · Technical Requirements · ASP.NET Core · Agile Methodologies · Google Cloud Platform (GCP) · User Interface Programming
+  - position: Senior Full-stack Developer
+    employer: T101
+    start: Feb. 2020
+    end: Sep. 2020
+    desc: >-
+      * Drove the complete platform re-architecture and development for Recon, a
+      UK-based dating app with 200,000 monthly active users.
+
+      * Modernized and scaled the app by using .NET Core, Firestore, SignalR, Angular 10/TypeScript, gRPC, SQL Server, MySQL, microservices and Kubernetes on GCP.
+
+
+      **Skills:** ASP.NET · Angular · TypeScript · Amazon ECS · ASP.NET MVC · Kubernetes · Git · C# · Full-Stack Development · Web Development · JavaScript · Front-End Development · MySQL · Microsoft SQL Server · Cloud Development · NoSQL · HTML · .NET Core · Microservices · Technical Requirements · Agile Methodologies · User Interface Programming
+  - position: Senior Software Developer
+    employer: Datatrial
+    start: Apr. 2019
+    end: Feb. 2020
+    desc: >-
+      * Worked on developing new/improving existing functional modules for
+      Datatrial's Nucleus offering, which aims to provide a web platform for
+      facilitating clinical trials.
+
+
+      **Skills:** ASP.NET · TypeScript · ASP.NET MVC · Git · C# · Full-Stack Development · Web Development · JavaScript · Front-End Development · MySQL · Microsoft SQL Server · Aurelia · HTML · Agile Methodologies · User Interface Programming
+  - position: Software Engineer
+    employer: pipdig
+    start: Aug 2018
+    end: Apr 2019
+    desc: >-
+      * Developing a mix of commercial sites and bespoke blogs, I was
+      responsible for the entire product life-cycle. This included requirements
+      gathering, development, management of the project and ultimately
+      delivering and maintaining the product. Responsibilities also included
+      improving internal software development practices and working to increase
+      efficiency across a wide range of small, fast-paced projects.
+
+
+      **Skills:** TypeScript · Content Management Systems (CMS) · Git · Full-Stack Development · WordPress · Web Development · JavaScript · Front-End Development · MySQL · Microsoft SQL Server · Cloud Development · PHP · HTML · Agile Methodologies · User Interface Programming
+  - position: Senior Software Developer
+    employer: The Works
+    start: Apr. 2018
+    end: Aug. 2018
+    desc: >-
+      * I was the sole developer for an event management platform at Newcastle
+      University, enhancing it by developing key features.
+
+
+      **Skills:** ASP.NET · ASP.NET MVC · Content Management Systems (CMS) · Git · C# · Full-Stack Development · Web Development · JavaScript · Front-End Development · Microsoft SQL Server · HTML · Agile Methodologies · User Interface Programming · Umbraco
+  - position: Software Developer
+    employer: Orangebus
+    start: Jan. 2017
+    end: Apr. 2018
+    desc: >-
+      * My responsibilities involved developing and managing a variety of
+      different projects across different industries.
+
+
+      **Skills:** ASP.NET MVC · Git · C# · Full-Stack Development · JavaScript · Front-End Development · Microsoft SQL Server · HTML · Agile Methodologies · User Interface Programming
+  - position: Junior Software Developer
+    employer: True Potential LLP
+    start: Oct. 2015
+    end: Dec. 2016
+    desc: >-
+      * Primarily a web developer, my responsibilities included developing
+      interactivity on the front-end, back-end services and designing database
+      structures for large-scale web applications that are in-use by over 2
+      million clients as of November 2016.
+
+
+      **Skills:** ASP.NET MVC · Git · C# · Full-Stack Development · Web Development · JavaScript · Visual Basic .NET (VB.NET) · Front-End Development · Microsoft SQL Server · HTML · Agile Methodologies · User Interface Programming
+  - position: IT Support / Trainee Software Developer
+    employer: Innovation Property (UK)
+    start: Jan. 2013
+    end: Sep. 2015
+    desc: >-
+      * I worked as an IT Support Technician and Developer Trainee. My
+      responsibilities included dealing with IT issues via an IT helpdesk
+      system. I also worked on improvements to internally-developed software
+      that was used by our Arboricultural staff. I also provided updates to an
+      internal MVC application used by office staff to log data, arrange
+      appointments for external staff and contact clients.
+
+
+      **Skills:** ASP.NET MVC · Git · C# · Full-Stack Development · JavaScript · Front-End Development · Microsoft SQL Server · HTML · Agile Methodologies · User Interface Programming

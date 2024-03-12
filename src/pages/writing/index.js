@@ -1,17 +1,14 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header/Header'
+import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 
 export default function Writing () {
   return (
-    <>
-      <Header />
+    <DefaultLayout>
       <section>
         <h1>Writing</h1>
       </section>
       <section>
         <i>Nothing to see here yet!</i>
       </section>
-      <Footer />
-    </>
+    </DefaultLayout>
   )
 }

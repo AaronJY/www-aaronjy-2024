@@ -2,7 +2,7 @@ import React from 'react'
 
 import style from './DefaultLayout.module.css'
 import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer'
+import Footer from '@/components/Footer/Footer'
 
 import { Barlow } from 'next/font/google'
 

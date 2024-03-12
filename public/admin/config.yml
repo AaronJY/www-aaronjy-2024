@@ -1,0 +1,59 @@
+local_backend: true
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: public/img
+public_folder: img
+collections:
+  - name: "recipes"
+    label: "Recipes"
+    folder: "content/recipes"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: Image, name: image, widget: image, required: false}
+      - {label: "You Will Need", name: "you-will-need", widget: "markdown" }
+      - {label: "Recipe", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "CV"
+        name: "cv"
+        file: "content/pages/cv.yml"
+        fields:
+          - label: Core competencies
+            widget: list
+            name: competencies
+            allow_add: true
+          - label: Education history
+            widget: list
+            name: education
+            allow_add: true
+          - label: Certifications
+            widget: list
+            name: certifications
+            allow_add: true
+          - label: Languages
+            widget: list
+            name: languages
+            allow_add: true
+            fields:
+              - {label: "Name", name: name, widget: string }
+              - {label: "Proficiency", name: proficiency, widget: string }
+          - label: Technical skills
+            widget: list
+            name: tech-skills
+          - label: Professional experience
+            name: experience
+            widget: list
+            fields:
+              - { label: Position, name: position, widget: string }
+              - { label: Employer, name: employer, widget: string }
+              - { label: Start date, name: start, widget: string }
+              - { label: End date, name: end, widget: string }
+              - { label: Description, name: desc, widget: markdown }
+
+           
+
+

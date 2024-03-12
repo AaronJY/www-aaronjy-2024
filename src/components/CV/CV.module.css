@@ -1,0 +1,29 @@
+.cv {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.cv > div:first-child {
+  flex: 1;
+}
+
+.cv > div:last-child {
+  flex: 2;
+}
+
+.cv .work-experience >div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cv ul {
+  margin-left: 0;
+  list-style: inside;
+  list-style-type: circle;
+}
+
+.cv ul li:not(:last-child) {
+  margin-bottom: 10px;
+}

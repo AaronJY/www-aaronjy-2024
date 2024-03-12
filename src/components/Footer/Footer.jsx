@@ -1,15 +1,17 @@
 import React from 'react'
 
+import style from './Footer.module.css'
+
 function Footer () {
   return (
-    <footer>
+    <footer className={style.footer}>
       <nav>
         <ul>
           <li>
-            <a href='#'>back to top</a>
+            <a href='#'>Back to top</a>
           </li>
           <li>
-            <a href='mailto:me@aaronjy.me'>send me an email</a>
+            <a href='mailto:me@aaronjy.me'>Send me an email</a>
           </li>
         </ul>
       </nav>
