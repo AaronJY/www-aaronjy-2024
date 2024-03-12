@@ -46,9 +46,9 @@ function CVWorkExperience ({ position, employer, start, end, children }) {
           <br />
           <small>{employer}</small>
         </h3>
-        <div>
-          <time>{start}</time>-<time>{end}</time>
-        </div>
+        <small>
+          <time>{start}</time> - <time>{end}</time>
+        </small>
       </div>
       <div dangerouslySetInnerHTML={{ __html: children }} />
     </div>

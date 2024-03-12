@@ -10,6 +10,7 @@ function Header () {
         <Link href='/'>Home</Link>
         {/* <Link href='/writing'>Writing</Link> */}
         <Link href='/cv'>CV</Link>
+        <Link href='/fun'>Fun</Link>
       </nav>
     </header>
   )

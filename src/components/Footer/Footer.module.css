@@ -1,3 +1,7 @@
 .footer nav:first-child a {
   text-transform: lowercase;
 }
+
+.footer nav li {
+  margin-bottom: 0;
+}
