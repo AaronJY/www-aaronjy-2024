@@ -18,7 +18,7 @@ function CVPage ({
         <h1>CV</h1>
       </section>
       <section>
-      {/* eslint-disable-next-line react/jsx-pascal-case*/} 
+        {/* eslint-disable-next-line react/jsx-pascal-case */}
         <CV
           competencies={competencies}
           education={education}
