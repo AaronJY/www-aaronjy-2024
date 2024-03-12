@@ -1,8 +1,10 @@
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
+import { NextSeo } from 'next-seo'
 
 export default function Writing () {
   return (
     <DefaultLayout>
+      <NextSeo title='Writing' />
       <section>
         <h1>Writing</h1>
       </section>

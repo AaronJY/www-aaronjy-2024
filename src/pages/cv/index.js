@@ -4,6 +4,7 @@ import React from 'react'
 import yaml from 'js-yaml'
 import fs from 'fs'
 import showdown from 'showdown'
+import { NextSeo } from 'next-seo'
 
 function CVPage ({
   competencies,
@@ -14,6 +15,7 @@ function CVPage ({
 }) {
   return (
     <DefaultLayout>
+      <NextSeo title='CV'/>
       <section>
         <h1>CV</h1>
       </section>
