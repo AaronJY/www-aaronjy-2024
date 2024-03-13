@@ -3,7 +3,7 @@ import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 import Article from '@/components/Article/Article'
 import { getStaticEntryPaths, getStaticEntryProps } from '@/lib/content'
 
-const CONTENT_PATH = "./content/recipes"
+const CONTENT_PATH = './content/recipes'
 
 export const getStaticPaths = () => getStaticEntryPaths(CONTENT_PATH)
 export const getStaticProps = (ctx) => getStaticEntryProps(CONTENT_PATH, ctx)

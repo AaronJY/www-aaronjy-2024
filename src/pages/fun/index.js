@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { getStaticEntryListProps } from '@/lib/content'
 
-export const getStaticProps = () => getStaticEntryListProps("./content/fun", "/fun/")
+export const getStaticProps = () => getStaticEntryListProps('./content/fun', '/fun/')
 
 export default function Fun ({ entries, urlPrefix }) {
   return (

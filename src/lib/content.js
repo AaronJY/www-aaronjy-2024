@@ -22,7 +22,7 @@ export function getMarkdownEntry (path) {
   }
 }
 
-export function getStaticEntryPaths(contentPath) {
+export function getStaticEntryPaths (contentPath) {
   const entries = fs.readdirSync(contentPath, { withFileTypes: true })
 
   const paths = entries.map((dirent) => ({
@@ -38,14 +38,14 @@ export function getStaticEntryPaths(contentPath) {
   }
 }
 
-export function getStaticEntryProps(contentPath, { params }) {
+export function getStaticEntryProps (contentPath, { params }) {
   const path = `${contentPath}/${params.slug}.md`
   const entry = getMarkdownEntry(path)
 
   return { props: { ...entry } }
 }
 
-export function getStaticEntryListProps(contentPath, urlPrefix) {
+export function getStaticEntryListProps (contentPath, urlPrefix) {
   const fun = fs.readdirSync(contentPath, { withFileTypes: true })
   const entries = fun.map((dirent) =>
     getMarkdownEntry(`${dirent.path}/${dirent.name}`)
