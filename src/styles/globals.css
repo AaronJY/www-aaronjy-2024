@@ -16,3 +16,7 @@ ul {
 ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
+article {
+  border: none;
+}

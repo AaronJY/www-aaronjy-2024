@@ -16,6 +16,15 @@ collections:
       - {label: "You Will Need", name: "you-will-need", widget: "markdown" }
       - {label: "Recipe", name: "body", widget: "markdown" }
 
+  - name: writing
+    label: Writing
+    folder: content/writing
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Description, name: desc, widget: text}
+      - {label: Body, name: body, widget: markdown }
+
   - name: fun
     label: Fun
     folder: content/fun

@@ -14,7 +14,7 @@ function FunSingle ({ attributes, html }) {
 }
 
 export function getStaticPaths () {
-  const fun = fs.readdirSync('./content/fun', { withFileTypes: true })
+  const fun = fs.readdirSync('./content/writing', { withFileTypes: true })
 
   const paths = fun.map((dirent) => ({
     params: {
@@ -29,7 +29,7 @@ export function getStaticPaths () {
 }
 
 export function getStaticProps ({ params }) {
-  const path = `./content/fun/${params.slug}.md`
+  const path = `./content/writing/${params.slug}.md`
 
   const entry = getMarkdownEntry(path)
   return { props: { ...entry } }
