@@ -7,9 +7,9 @@ Google actually has [documentation](https://cloud.google.com/storage/docs/hostin
 
 ## Networking
 
-This site is just a collection oh static assets (HTML, JS, CSS and images) that live inside a Google Cloud Storage bucket. When you load the site, the below route is taken once your request reaches GCP.
+This site is just a collection of static assets (HTML, JS, CSS and images) that live inside a Google Cloud Storage bucket. When you load the site, the below route is taken once your request reaches GCP.
 
-![Route diagram showing networking path from user to destination on GCP](/img/screenshot-2024-03-13-at-11.58.55.png "Route diagram showing networking path from yser to destination on GCP")
+![Route diagram showing networking path from user to destination on GCP](/img/screenshot-2024-03-13-at-11.58.55.png "Route diagram showing networking path from year to destination on GCP")
 
 1. As you can see, you:
 2. Hit a load balancer, which then
@@ -21,7 +21,7 @@ The setup is pretty simple, and doesn't really deviate from Google's suggested s
 
 ## Deploying
 
-Setting up a seamless deployment stategy gets a little tricker, however. I opted to set up a manual deployment strategy, which involves calling `npm run deploy` to kick off the deployment. This in turn calls a bash script that handles the deployment.
+Setting up a seamless deployment strategy gets a little tricker, however. I opted to set up a manual deployment strategy, which involves calling `npm run deploy` to kick off the deployment. This in turn calls a bash script that handles the deployment.
 
 The script consists of 4 deployment steps:
 
