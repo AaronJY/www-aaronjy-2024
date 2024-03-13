@@ -21,3 +21,35 @@ export function getMarkdownEntry (path) {
     slug
   }
 }
+
+export function getStaticEntryPaths(contentPath) {
+  const entries = fs.readdirSync(contentPath, { withFileTypes: true })
+
+  const paths = entries.map((dirent) => ({
+    params: {
+      slug: toSlug(dirent.name),
+      contentPath: ';test'
+    }
+  }))
+
+  return {
+    fallback: false,
+    paths
+  }
+}
+
+export function getStaticEntryProps(contentPath, { params }) {
+  const path = `${contentPath}/${params.slug}.md`
+  const entry = getMarkdownEntry(path)
+
+  return { props: { ...entry } }
+}
+
+export function getStaticEntryListProps(contentPath, urlPrefix) {
+  const fun = fs.readdirSync(contentPath, { withFileTypes: true })
+  const entries = fun.map((dirent) =>
+    getMarkdownEntry(`${dirent.path}/${dirent.name}`)
+  )
+
+  return { props: { entries, urlPrefix } }
+}

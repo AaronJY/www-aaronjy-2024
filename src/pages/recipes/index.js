@@ -3,14 +3,14 @@ import React from 'react'
 import Link from 'next/link'
 import { getStaticEntryListProps } from '@/lib/content'
 
-export const getStaticProps = () => getStaticEntryListProps("./content/fun", "/fun/")
+export const getStaticProps = () => getStaticEntryListProps("./content/recipes", "/recipes/")
 
-export default function Fun ({ entries, urlPrefix }) {
+export default function Recipes ({ entries, urlPrefix }) {
   return (
     <DefaultLayout>
       <section>
-        <h1>Fun</h1>
-        <p>Hobby projects, helpful scripts, and other fun bits and bobs!</p>
+        <h1>Recipes</h1>
+        <p>Some of my favourite recipes. Most of them are variations of recipes I have found online, but some I&apos;ve cooked up myself!</p>
       </section>
 
       <section>

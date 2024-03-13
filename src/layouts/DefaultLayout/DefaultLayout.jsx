@@ -4,7 +4,7 @@ import style from './DefaultLayout.module.css'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 
-import { Fira_Sans as FiraSans} from 'next/font/google'
+import { Fira_Sans as FiraSans } from 'next/font/google'
 
 const fontMain = FiraSans({ subsets: ['latin'], weight: ['400', '600'] })
 

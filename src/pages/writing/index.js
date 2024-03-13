@@ -1,10 +1,11 @@
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 import React from 'react'
-import fs from 'fs'
 import Link from 'next/link'
-import { getMarkdownEntry } from '@/lib/content'
+import { getStaticEntryListProps } from '@/lib/content'
 
-function Fun ({ entries }) {
+export const getStaticProps = () => getStaticEntryListProps("./content/writing", "/writing/")
+
+export default function Writing ({ entries, urlPrefix }) {
   return (
     <DefaultLayout>
       <section>
@@ -19,25 +20,13 @@ function Fun ({ entries }) {
         {entries.map((e) => (
           <div key={e.attributes.title}>
             <h2>
-              <Link href={'/writing/' + e.slug}>{e.attributes.title}</Link>
+              <Link href={`${urlPrefix}${e.slug}`}>{e.attributes.title}</Link>
             </h2>
             <p>{e.attributes.desc}</p>
-            <Link href={'/writing/' + e.slug}>Read more</Link>
+            <Link href={`${urlPrefix}${e.slug}`}>Read more</Link>
           </div>
         ))}
       </section>
     </DefaultLayout>
   )
 }
-
-export function getStaticProps () {
-  const fun = fs.readdirSync('./content/writing', { withFileTypes: true })
-
-  const entries = fun.map((dirent) =>
-    getMarkdownEntry(`${dirent.path}/${dirent.name}`)
-  )
-
-  return { props: { entries } }
-}
-
-export default Fun
