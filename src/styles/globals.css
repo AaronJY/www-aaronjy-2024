@@ -1,10 +1,24 @@
+:root {
+  --color-default: #30362F;
+  --color-primary: #DA7422;
+  --color-bg: #FFFBDB;
+}
+
 html, body {
   margin: 0;
-  padding: 0 15px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-default)
 }
 
 h1, h2, h3 {
   font-weight: 600;
+}
+
+a {
+  color: var(--color-primary)
 }
 
 ul {
@@ -19,4 +33,24 @@ ul li:not(:last-child) {
 
 article {
   border: none;
+  background: none;
+}
+
+article img {
+  border: 1px solid var(--color-default);
+}
+
+pre {
+  background-color: var(--color-default);
+  border-radius: 5px;
+  padding: 18px;
+}
+
+pre code {
+  color: var(--color-bg);
+}
+
+code:not(pre > code) {
+  background-color: var(--color-default);
+  color: var(--color-bg)
 }

@@ -9,7 +9,10 @@ function Fun ({ entries }) {
     <DefaultLayout>
       <section>
         <h1>Writing</h1>
-        <p>Hobby projects, helpful scripts, and other fun bits and bobs!</p>
+        <p>
+          Come get ya thoughts, ramblings, technical writing and other
+          long-from text content here!
+        </p>
       </section>
 
       <section>

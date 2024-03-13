@@ -4,17 +4,17 @@ import style from './DefaultLayout.module.css'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 
-import { Barlow } from 'next/font/google'
+import { Fira_Sans as FiraSans} from 'next/font/google'
 
-const fontMain = Barlow({ subsets: ['latin'], weight: ['400', '600'] })
+const fontMain = FiraSans({ subsets: ['latin'], weight: ['400', '600'] })
 
 function DefaultLayout ({ children }) {
   return (
-    <div className={style.layout}>
+    <main className={`${style.layout} ${fontMain.className}`}>
       <Header />
-      <main className={`${fontMain.className}`}>{children}</main>
+      <article>{children}</article>
       <Footer />
-    </div>
+    </main>
   )
 }
 
