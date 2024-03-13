@@ -2,10 +2,11 @@ BUCKET_URL="gs://aaronjy-www"
 BACKUP_BUCKET_URL="gs://aaronjy-www-backup"
 
 echo "------------------------------"
-echo "DELETING CURRENT SITE FILES"
+echo "BACKUP CURRENT SITE FILES"
 echo "------------------------------"
 
-gcloud storage rm $BUCKET_URL/**
+TIMESTAMP=$(date +%Y-%m-%d_%H:%M:%S)
+gcloud transfer jobs create $BUCKET_URL $BACKUP_BUCKET_URL/$(date +%Y-%m-%d_%H:%M:%S)/ --no-async --delete-from=source-after-transfer;
 
 echo "------------------------------"
 echo "REMOVE SENSITIVE FILES"
