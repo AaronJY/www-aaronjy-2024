@@ -98,7 +98,15 @@ export default function Home () {
         <h2>About this site</h2>
         <p>www.aaronjy.me is a static site (i.e. a bunch of HTML, JS, CSS and image files) written in JavaScript using Next.js. Tacit is being used as a micro CSS framework, and various smaller bits of custom CSS have been applied on top.</p>
         <p>The site is hosted inside a Google Cloud Storage bucket with a load balancer sat in front of it. The load balancer is required as Cloud Storage doesn&apos;t support a) custom domains, b) HTTPS out of the box or c) a global CDN solution.</p>
-        <p>One of the biggest benefits of a website made of simple static files and assets is that I can deploy it easily, almost anywhere, and for very little money. Obviously, hosting cost is mostly almost relative to the amount of data transferred (i.e. the number of visitors accessing your site and downloading its assets), but I anticipate paying only a few pennies a month as things stand (unless my little site becomes incredibly popular overnight for some bizarre reason...)</p>
+        <p>One of the biggest benefits of a website made of simple static files and assets is that I can deploy it easily, almost anywhere, and for very little money. Obviously, hosting cost is mostly relative to the amount of data transferred (i.e. the number of visitors accessing your site and downloading its assets), but I anticipate paying only a few pennies a month as things stand (unless my little site becomes incredibly popular overnight for some bizarre reason...)</p>
+        <p>Deploying this site involves:</p>
+        <ol>
+          <li>Compiling a bunch of static assets (HTML, CSS, JS) from the site source code using <code>next build</code></li>
+          <li>Deleting all existing files from the storage bucket used for hosting</li>
+          <li>Uploading the site&apos;s new asset files to the bucket</li>
+          <li>Invalidating Google Cloud CDN&apos;s global cache, so users receive the latest version of the website</li>
+        </ol>
+        <p>These steps have been fully automated through a custom script utilising GCP&apos;s CLI, so deploying the site couldn&apos;t get any simpler.</p>
       </section>
     </DefaultLayout>
   )
