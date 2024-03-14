@@ -13,15 +13,15 @@ export default function Home () {
       <section>
         <h1>Hello!</h1>
         <p>
-          I&apos;m Aaron. I&apos;m a Brit living in Newcastle-upon-tyne, UK. I
-          work professionally as a Software Engineer and Tutor, and study
-          languages in my spare time.
+          I&apos;m Aaron, a Brit living in Newcastle-upon-tyne, UK. I
+          work professionally as a Software Engineer, and study
+          languages, history and philosophy in my spare time.
         </p>
         <p>
           This is my little corner of the web! I&apos;ve always had a habit of
           &apos;lurking&apos; online; I barely interact with the content I
           consume, and you&apos;ll rarely if ever catch me posting or commenting
-          on something. That said, this little site endeavours to encourage me
+          on something. This little site endeavours to encourage me
           to share a bit more about myself online.
         </p>
       </section>
@@ -81,17 +81,6 @@ export default function Home () {
             , unfortunately. A social network for professionals.
           </li>
         </ul>
-
-        {/* <p>
-          <strong>Yarbz Tutoring</strong> is my tutoring site. You can read a
-          bit more about my tutoring and general software develpment experience,
-          and book a class if it suits you.
-        </p>
-        <p>
-          <ExternalLink href='https://tutoring.yarbz.digital'>
-            Read more about my tutoring side-gig.
-          </ExternalLink>
-        </p> */}
       </section>
 
       <section>
@@ -99,14 +88,7 @@ export default function Home () {
         <p>www.aaronjy.me is a static site (i.e. a bunch of HTML, JS, CSS and image files) written in JavaScript using Next.js. Tacit is being used as a micro CSS framework, and various smaller bits of custom CSS have been applied on top.</p>
         <p>The site is hosted inside a Google Cloud Storage bucket with a load balancer sat in front of it. The load balancer is required as Cloud Storage doesn&apos;t support a) custom domains, b) HTTPS out of the box or c) a global CDN solution.</p>
         <p>One of the biggest benefits of a website made of simple static files and assets is that I can deploy it easily, almost anywhere, and for very little money. Obviously, hosting cost is mostly relative to the amount of data transferred (i.e. the number of visitors accessing your site and downloading its assets), but I anticipate paying only a few pennies a month as things stand (unless my little site becomes incredibly popular overnight for some bizarre reason...)</p>
-        <p>Deploying this site involves:</p>
-        <ol>
-          <li>Compiling a bunch of static assets (HTML, CSS, JS) from the site source code using <code>next build</code></li>
-          <li>Deleting all existing files from the storage bucket used for hosting</li>
-          <li>Uploading the site&apos;s new asset files to the bucket</li>
-          <li>Invalidating Google Cloud CDN&apos;s global cache, so users receive the latest version of the website</li>
-        </ol>
-        <p>These steps have been fully automated through a custom script utilising GCP&apos;s CLI, so deploying the site couldn&apos;t get any simpler.</p>
+
       </section>
     </DefaultLayout>
   )
