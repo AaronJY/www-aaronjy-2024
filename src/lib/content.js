@@ -55,7 +55,5 @@ export function getStaticEntryListProps (contentPath, urlPrefix) {
     getMarkdownEntry(`${dirent.path}/${dirent.name}`)
   ).sort((a, b) => new Date(b.attributes.pubdate) - new Date(a.attributes.pubdate))
 
-  console.log(entries)
-
   return { props: { entries, urlPrefix } }
 }
