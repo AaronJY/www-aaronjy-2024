@@ -21,7 +21,7 @@ function Article ({ attributes, html }) {
         <p>{attributes.desc}</p>
         {attributes.pubdate && <p>{attributes.pubdate}</p>}
         <hr />
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div data-test='content' dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </section>
   )
