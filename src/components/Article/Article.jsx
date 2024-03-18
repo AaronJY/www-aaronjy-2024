@@ -8,13 +8,18 @@ function Article ({ attributes, html }) {
         title={attributes.title} description={attributes.desc} openGraph={
         {
           title: attributes.title,
-          description: attributes.desc
+          description: attributes.desc,
+          type: 'article',
+          article: {
+            publishedTime: attributes.pubdate ?? null
+          }
         }
       }
       />
       <div>
         <h1>{attributes.title}</h1>
         <p>{attributes.desc}</p>
+        {attributes.pubdate && <p>{attributes.pubdate}</p>}
         <hr />
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
