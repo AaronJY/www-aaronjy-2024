@@ -11,6 +11,7 @@ collections:
     create: true
     fields:
       - {label: Title, name: title, widget: string}
+      - {label: "Publish Date", name: pubdate, widget: datetime, required: false, default: "" }
       - {label: Description, name: desc, widget: text}
       - {label: Body, name: body, widget: markdown }
 
@@ -20,6 +21,7 @@ collections:
     create: true
     fields:
       - {label: Title, name: title, widget: string}
+      - {label: "Publish Date", name: pubdate, widget: datetime, required: false, default: "" }
       - {label: Description, name: desc, widget: text}
       - {label: Body, name: body, widget: markdown }
 
@@ -29,6 +31,7 @@ collections:
     create: true
     fields:
       - {label: Title, name: title, widget: string}
+      - {label: "Publish Date", name: pubdate, widget: datetime, required: false, default: "" }
       - {label: Description, name: desc, widget: text}
       - {label: Body, name: body, widget: markdown }
       

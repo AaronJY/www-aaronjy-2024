@@ -16,7 +16,11 @@ export function getMarkdownEntry (path) {
   const slug = toSlug(path.substring(path.lastIndexOf('/') + 1))
 
   return {
-    attributes,
+    attributes: {
+      ...attributes,
+      pubdate: attributes.pubdate?.toUTCString() ?? null
+
+    },
     html,
     slug
   }
@@ -27,8 +31,7 @@ export function getStaticEntryPaths (contentPath) {
 
   const paths = entries.map((dirent) => ({
     params: {
-      slug: toSlug(dirent.name),
-      contentPath: ';test'
+      slug: toSlug(dirent.name)
     }
   }))
 
@@ -41,15 +44,16 @@ export function getStaticEntryPaths (contentPath) {
 export function getStaticEntryProps (contentPath, { params }) {
   const path = `${contentPath}/${params.slug}.md`
   const entry = getMarkdownEntry(path)
+  const { attributes } = entry
 
-  return { props: { ...entry } }
+  return { props: { ...entry, attributes } }
 }
 
 export function getStaticEntryListProps (contentPath, urlPrefix) {
   const fun = fs.readdirSync(contentPath, { withFileTypes: true })
   const entries = fun.map((dirent) =>
     getMarkdownEntry(`${dirent.path}/${dirent.name}`)
-  )
+  ).sort((a, b) => new Date(b.attributes.pubdate) - new Date(a.attributes.pubdate))
 
   return { props: { entries, urlPrefix } }
 }
