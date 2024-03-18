@@ -22,6 +22,8 @@ export default function Writing ({ entries, urlPrefix }) {
             <h2>
               <Link href={`${urlPrefix}${e.slug}`}>{e.attributes.title}</Link>
             </h2>
+            {!!e.attributes.pubdate && <p>{e.attributes.pubdate}</p>}
+
             <p>{e.attributes.desc}</p>
             <Link href={`${urlPrefix}${e.slug}`}>Read more</Link>
           </div>
