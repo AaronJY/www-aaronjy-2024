@@ -2,15 +2,15 @@
 title: Manakish (pan)
 desc: Yummy yummy!
 ---
+
 ## You will need
 
-* 1 cup flower
-* 1tbsp sugar
-* 1tbsp sugar
-* 1tsp yeast
-* 1/4 cup vegetable oil
-* 1/2 tsp baking powder
-* cheese (mozarella, akkawi) or za'atar for filling
+- flower
+- 1tbsp sugar
+- 1 tsp yeast
+- 1/4 cup vegetable oil
+- 1/2 tsp baking powder
+- cheese (mozarella, akkawi) or za'atar for filling
 
 ## Method
 
