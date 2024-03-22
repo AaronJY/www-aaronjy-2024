@@ -12,7 +12,7 @@
     "link": "npx standard",
     "format": "npx standard --fix",
     "prepare": "husky",
-    "deploy": "./util/deploy-gcloud.sh",
+    "deploy": "./util/pre-deploy.sh && ./util/deploy-gcloud.sh",
     "test": "jest --verbose"
   },
   "dependencies": {

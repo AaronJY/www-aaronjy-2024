@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e # Exit with nonzero exit code if anything fails
+
 BUCKET_URL="gs://aaronjy-www"
 BACKUP_BUCKET_URL="gs://aaronjy-www-backup"
 

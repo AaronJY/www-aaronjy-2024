@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import ExternalLink from '@/components/ExternalLink'
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
+import ExternalLink from '@/components/ExternalLink/ExternalLink'
 
 export default function Home () {
   return (

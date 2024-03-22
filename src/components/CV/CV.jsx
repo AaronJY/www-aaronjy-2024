@@ -1,6 +1,6 @@
 import React from 'react'
 
-import style from './CV.module.css'
+import style from './Cv.module.css'
 
 function Cv ({
   competencies,
