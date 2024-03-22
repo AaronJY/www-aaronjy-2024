@@ -4,7 +4,7 @@ import style from './Footer.module.css'
 
 function Footer () {
   return (
-    <footer className={style.footer}>
+    <footer className={style.footer} data-testid='footer'>
       <nav>
         <ul>
           <li>
