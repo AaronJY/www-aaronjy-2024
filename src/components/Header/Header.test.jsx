@@ -11,7 +11,7 @@ describe('Header', () => {
 
   it('renders correct navigation links', () => {
     render(<Header />)
-    const links = ['Home', 'Writing', 'Recipess', 'Fun', 'CV']
+    const links = ['Home', 'Writing', 'Recipes', 'Fun', 'CV']
     links.forEach(link => {
       expect(screen.getByText(link)).toBeInTheDocument()
     })
