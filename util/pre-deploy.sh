@@ -7,7 +7,8 @@ echo "Building site..."
 npm run build
 
 echo "Commit any build artifacts..."
-git add . && git commit -m "chore: build artifacts"
+git add .
+git commit -m "chore: build artifacts"
 
 ech "Running tests..."
 npx jest
