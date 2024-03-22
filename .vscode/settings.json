@@ -2,5 +2,9 @@
   "cSpell.words": [
     "Dirents",
     "Sitecore"
-  ]
+  ],
+  "files.autoSave": "off",
+  "standard.autoFixOnSave": true,
+  "prettier.enable": false,
+  "editor.defaultFormatter": "standard.vscode-standard"
 }

@@ -2,23 +2,37 @@ import React from 'react'
 
 import style from './CV.module.css'
 
-function CV ({ competencies, education, certifications, languages, experience }) {
+function CV ({
+  competencies,
+  education,
+  certifications,
+  languages,
+  experience
+}) {
   return (
     <div className={style.cv}>
       <div>
         <h2>Core competencies</h2>
         <ul>
-          {competencies.sort().map((c, i) => <li key={i}>{c}</li>)}
+          {competencies.sort().map((c, i) => (
+            <li key={i}>{c}</li>
+          ))}
         </ul>
 
         <h2>Certifications</h2>
         <ul>
-          {certifications.sort().map((c, i) => <li key={i}>{c}</li>)}
+          {certifications.sort().map((c, i) => (
+            <li key={i}>{c}</li>
+          ))}
         </ul>
 
         <h2>Languages</h2>
         <ul>
-          {languages.sort().map((c, i) => <li key={i}>{c.name} - {c.proficiency}</li>)}
+          {languages.sort().map((c, i) => (
+            <li key={i}>
+              {c.name} - {c.proficiency}
+            </li>
+          ))}
         </ul>
 
         <h2>Education history</h2>
@@ -28,7 +42,15 @@ function CV ({ competencies, education, certifications, languages, experience })
         <h2>Professional experience</h2>
 
         {experience.map((exp, i) => (
-          <CVWorkExperience key={i} employer={exp.employer} position={exp.position} start={exp.start} end={exp.end}>{exp.desc}</CVWorkExperience>
+          <CVWorkExperience
+            key={i}
+            employer={exp.employer}
+            position={exp.position}
+            start={exp.start}
+            end={exp.end}
+          >
+            {exp.desc}
+          </CVWorkExperience>
         ))}
       </div>
     </div>
@@ -50,7 +72,10 @@ function CVWorkExperience ({ position, employer, start, end, children }) {
           <time>{start}</time> - <time>{end}</time>
         </small>
       </div>
-      <div data-test='children' dangerouslySetInnerHTML={{ __html: children }} />
+      <div
+        data-test='children'
+        dangerouslySetInnerHTML={{ __html: children }}
+      />
     </div>
   )
 }
