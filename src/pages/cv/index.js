@@ -1,4 +1,4 @@
-import CV from '@/components/CV/CV'
+import Cv from '@/components/Cv/Cv'
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 import React from 'react'
 import yaml from 'js-yaml'
@@ -21,7 +21,7 @@ function CVPage ({
       </section>
       <section>
         {/* eslint-disable-next-line react/jsx-pascal-case */}
-        <CV
+        <Cv
           competencies={competencies}
           education={education}
           certifications={certifications}

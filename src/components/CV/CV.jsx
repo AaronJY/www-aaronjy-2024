@@ -2,7 +2,7 @@ import React from 'react'
 
 import style from './CV.module.css'
 
-function CV ({
+function Cv ({
   competencies,
   education,
   certifications,
@@ -57,7 +57,7 @@ function CV ({
   )
 }
 
-export default CV
+export default Cv
 
 function CVWorkExperience ({ position, employer, start, end, children }) {
   return (

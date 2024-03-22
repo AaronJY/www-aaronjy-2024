@@ -13,7 +13,7 @@
     "format": "npx standard --fix",
     "prepare": "husky",
     "deploy": "./util/deploy-gcloud.sh",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "dependencies": {
     "next": "14.1.1",
