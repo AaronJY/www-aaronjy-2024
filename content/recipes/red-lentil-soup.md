@@ -1,6 +1,6 @@
 ---
 title: Red lentil soup
-desc: "-"
+desc: A simple spiced red lentil soup, based loosely on a Turkish recipe.
 ---
 ## You will need
 

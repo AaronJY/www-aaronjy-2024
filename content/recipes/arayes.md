@@ -1,6 +1,6 @@
 ---
 title: عرايس (arayes)
-desc: Yummy yummy!
+desc: Originally from the Middle East, Arayes are pita or flat bread stuffed with spiced and seasoned meat.
 ---
 
 ## You will need

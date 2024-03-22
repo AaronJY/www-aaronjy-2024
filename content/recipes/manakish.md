@@ -1,6 +1,6 @@
 ---
 title: Manakish (pan)
-desc: Yummy yummy!
+desc: Dough typically topped with za'atar, cheese or meat. A popular breakfast food from the Levant.
 ---
 
 ## You will need

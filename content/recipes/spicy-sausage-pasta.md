@@ -1,6 +1,6 @@
 ---
 title: Spicy sausage pasta
-desc: Yummy yummy!
+desc: Shamelessly stolen and tweaked from Gordon Ramsay, this dish is quick to make and satisfyingly filling.
 ---
 
 ## You will need
