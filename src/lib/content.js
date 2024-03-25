@@ -10,7 +10,10 @@ export function getMarkdownEntry (path) {
 
   const { attributes, body } = fm(fileContents)
 
-  const converter = new showdown.Converter()
+  const converter = new showdown.Converter({
+    tables: true,
+    tablesHeaderId: true
+  })
   const html = converter.makeHtml(body)
 
   const slug = toSlug(path.substring(path.lastIndexOf('/') + 1))
