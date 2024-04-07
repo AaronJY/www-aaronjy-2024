@@ -27,8 +27,16 @@ Tiers are:
 | S    | Silence in The Library    | S4     | E8      |       |
 | S    | The Impossible Planet     | S2     | E8      |       |
 | S    | The Satan Pit             | S2     | E9      |       |
+| A    | Dalek                     | S1     | E6      |       |
+| A    | The Empty Child           | S1     | E9      |       |
 | A    | The Doctor's Wife         | S6     | E4      |       |
+| B    | The Unquiet Dead          | S1     | E3      |       |
+| B    | Father's Day              | S1     | E8      |       |
+| B    | The Doctor Dances         | S1     | E9      |       |
+| B    | Bad Wolf                  | S1     | E12     |       |
+| B    | The Parting of The Ways   | S1     | E13     |       |
 | B    | Forest of The Dead        | S4     | E9      |       |
+| C    | Rose                      | S1     | E1      |       |
 | C    | The End of The World      | S1     | E2      |       |
 | C    | Tooth and Claw            | S2     | E2      |       |
 | E    | Closing Time              | S6     | E12     |       |
