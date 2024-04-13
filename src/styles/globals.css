@@ -1,7 +1,7 @@
 :root {
-  --color-default: #30362F;
-  --color-primary: #DA7422;
-  --color-bg: #FFFBDB;
+  --color-default: #1f3470;
+  --color-primary: #5172cf;
+  --color-bg: #fbfbfb;
 }
 
 html, body {
@@ -15,6 +15,7 @@ body {
 
 h1, h2, h3 {
   font-weight: 600;
+  color: var(--color-default)
 }
 
 a {
