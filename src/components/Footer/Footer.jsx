@@ -11,7 +11,7 @@ function Footer () {
             <a href='#'>Back to top</a>
           </li>
           <li>
-            <a href='/static/pgp.txt'>OpenGPG key</a>
+            <a href='/static/pgp.txt'>pgp key</a>
           </li>
           <li>
             <a href='mailto:me@aaronjy.me'>Send me an email</a>
