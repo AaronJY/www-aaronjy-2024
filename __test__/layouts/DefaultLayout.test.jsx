@@ -1,6 +1,6 @@
 /* eslint-env jest */
 import { render, screen } from '@testing-library/react'
-import DefaultLayout from './DefaultLayout'
+import DefaultLayout from '../../src/layouts/DefaultLayout/DefaultLayout'
 import '@testing-library/jest-dom'
 
 describe('DefaultLayout', () => {
