@@ -28,6 +28,9 @@ experience:
     end: Present
     desc: >-
       * Leading a small team of developers on a UK public sector project for the Department for Education (DfE)
+
+
+      **Skills:** ASP.NET Core · Microsoft Azure · Azure Data Factory · Git · C# · Full-Stack Development · Umbraco · Web Development · Microsoft SQL Server · Cloud Development ·  Microservices · Technical Requirements · Agile Methodologies
   - position: Software Development Tutor
     employer: Yarbz Digital Ltd
     start: Sep. 2023
@@ -50,7 +53,7 @@ experience:
 
       * Designed and built a proof-of-concept using Angular, Node.js, and gRPC, enabling real-time voice input streaming from web browsers to medical speech recognition software, leading to its active use by doctors for efficient communication.
 
-      * Maintained and improved the Integra Planner event management platform used by thousands of people for multi-day events, specifically for GARA Choruses.
+      * Maintained and improved the Integra Planner event management platform used by thousands of people for multi-day events, specifically for GALA Choruses.
 
       * Enabled efficient event planning and management by utilizing Angular, Ionic for mobile apps, AWS, SQL Server, and .NET Core.
 
@@ -69,7 +72,7 @@ experience:
 
 
       **Skills:** Amazon Elastic Container Registry (ECR) · TypeScript · Amazon ECS · Tailwind CSS · Node.js · Amazon Web Services (AWS) · Next.js · React.js · docker · Front-End Development · NoSQL · AWS Lambda · HTML · Agile Methodologies · User Interface Programming
-  - position: Software Architecht
+  - position: Software Architect
     employer: T101
     start: Sep. 2020
     end: Jul. 2021
@@ -158,7 +161,7 @@ experience:
     end: Sep. 2015
     desc: >-
       * I worked as an IT Support Technician and Developer Trainee. My
-      responsibilities included dealing with IT issues via an IT helpdesk
+      responsibilities included dealing with IT issues via an IT help desk
       system. I also worked on improvements to internally-developed software
       that was used by our Arboricultural staff. I also provided updates to an
       internal MVC application used by office staff to log data, arrange

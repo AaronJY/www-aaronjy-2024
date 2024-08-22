@@ -27,26 +27,32 @@ export default function Home () {
       </section>
 
       <section>
-        <h2>Tech I like</h2>
+        <h2>Tech I Like</h2>
         <ul>
           <li>
-            <strong>Sites:</strong> At the moment, I mainly use node with TS (or
-            JS for small projects) and Next.js to build sites and apps.
+            <strong>Web Development:</strong> I primarily use Node.js with TypeScript
+            (or JavaScript for smaller projects) alongside Next.js to build websites
+            and applications.
           </li>
           <li>
-            <strong>Scripts:</strong> My go-to for scripting is either Python or
-            JS, mainly because I&apos;m comfortable with these languages, and their
-            library ecosystem usually has everything I need to do what I need to
-            do.
+            <strong>Scripting:</strong> My preferred scripting languages are Python
+            and JavaScript, as I&apos;m well-versed in them and they offer extensive
+            libraries that typically cover my needs.
           </li>
           <li>
-            <strong>APIs:</strong> If I need something more robust for API or
-            back-end architecture than node, I usually go for dotnet core/C#
-            using ASP.NET. A strongly-typed language with an opinionated web
-            framework like ASP.NET helps to keep everything neat and tidy.
+            <strong>API and Backend Development:</strong> For more robust API or backend
+            architecture, I often choose .NET Core with C# and ASP.NET. The strongly-typed
+            nature of C# and the structured framework of ASP.NET help maintain clean and
+            organised code.
           </li>
-          <li><strong>Cloud:</strong> If I can get away with it, host on a droplet on Digitalocean. If not, my go-to is usually GCP because it&apos;s less soul-destroying than Azure and AWS (and I&apos;ve used it the most)</li>
+          <li>
+            <strong>Cloud Hosting:</strong> When possible, I opt for hosting on a
+            DigitalOcean droplet. If more extensive cloud services are required, I usually
+            opt for Google Cloud Platform (GCP), which I find more user-friendly than Azure
+            or AWS. I also self-host services on shared server hosting running Ubuntu Server, typically with Hetzner.
+          </li>
         </ul>
+
       </section>
 
       <section>
@@ -87,7 +93,7 @@ export default function Home () {
         <h2>About this site</h2>
         <p>www.aaronjy.me is a static site (i.e. a bunch of HTML, JS, CSS and image files) written in JavaScript using Next.js. Tacit is being used as a micro CSS framework, and various smaller bits of custom CSS have been applied on top.</p>
         <p>The site is hosted inside a Google Cloud Storage bucket with a load balancer sat in front of it. The load balancer is required as Cloud Storage doesn&apos;t support a) custom domains, b) HTTPS out of the box or c) a global CDN solution.</p>
-        <p>One of the biggest benefits of a website made of simple static files and assets is that I can deploy it easily, almost anywhere, and for very little money. Obviously, hosting cost is mostly relative to the amount of data transferred (i.e. the number of visitors accessing your site and downloading its assets), but I anticipate paying only a few pennies a month as things stand (unless my little site becomes incredibly popular overnight for some bizarre reason...)</p>
+        <p>One of the biggest benefits of a website made of simple static files and assets is that I can deploy it easily, almost anywhere, and for very little money.</p>
 
       </section>
     </DefaultLayout>

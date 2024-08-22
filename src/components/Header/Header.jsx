@@ -9,8 +9,6 @@ function Header () {
       <nav>
         <Link href='/'>Home</Link>
         <Link href='/writing'>Writing</Link>
-        <Link href='/recipes'>Recipes</Link>
-        <Link href='/fun'>Fun</Link>
         <Link href='/cv'>CV</Link>
       </nav>
     </header>

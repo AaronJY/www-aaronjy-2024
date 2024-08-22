@@ -1,10 +1,33 @@
 {
   "cSpell.words": [
+    "aaronjy",
+    "apos",
+    "Aurelia",
+    "Datatrial",
     "Dirents",
-    "Sitecore"
+    "doesn",
+    "fiftyfiveandfive",
+    "Firestore",
+    "Goodreads",
+    "helpdesk",
+    "Hetzner",
+    "Integra",
+    "Levantine",
+    "Orangebus",
+    "pipdig",
+    "quot",
+    "Radr",
+    "Recon",
+    "Sitecore",
+    "sportank",
+    "Umbraco",
+    "Yarbz"
   ],
   "files.autoSave": "off",
   "standard.autoFixOnSave": true,
   "prettier.enable": false,
-  "editor.defaultFormatter": "standard.vscode-standard"
+  "editor.defaultFormatter": "standard.vscode-standard",
+  "[javascript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
 }
