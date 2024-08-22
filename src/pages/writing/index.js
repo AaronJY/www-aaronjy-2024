@@ -2,18 +2,29 @@ import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 import React from 'react'
 import Link from 'next/link'
 import { getStaticEntryListProps } from '@/lib/content'
+import { NextSeo } from 'next-seo'
 
 export const getStaticProps = () => getStaticEntryListProps('./content/writing', '/writing/')
 
 export default function Writing ({ entries, urlPrefix }) {
+  const title = 'Writing'
+  const description = 'Come get ya thoughts, ramblings, technical writing and other long-from text content here!'
+
   return (
     <DefaultLayout>
+      <NextSeo
+        title={title}
+        description={description}
+        openGraph={
+          {
+            title,
+            description
+          }
+        }
+      />
       <section>
-        <h1>Writing</h1>
-        <p>
-          Come get ya thoughts, ramblings, technical writing and other
-          long-from text content here!
-        </p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </section>
 
       <section>
