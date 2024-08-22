@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import { render } from '@testing-library/react'
-import Grid from './Grid'
 import '@testing-library/jest-dom'
+import Grid from '@/components/Grid/Grid'
 
 describe('Grid', () => {
   it('renders without crashing', () => {

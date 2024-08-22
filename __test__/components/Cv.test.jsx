@@ -1,6 +1,6 @@
 /* eslint-env jest */
 import { render } from '@testing-library/react'
-import Cv from './Cv'
+import Cv from '../../src/components/Cv/Cv'
 import '@testing-library/jest-dom'
 
 describe('Cv', () => {

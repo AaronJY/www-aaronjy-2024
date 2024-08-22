@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import { render } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import Writing from '.'
+import Writing from '../../src/pages/writing'
 
 jest.mock('next/head', () => {
   return {

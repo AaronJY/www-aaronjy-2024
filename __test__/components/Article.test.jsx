@@ -1,6 +1,6 @@
 /* eslint-env jest */
 import { render } from '@testing-library/react'
-import Article from './Article'
+import Article from '../../src/components/Article/Article'
 import '@testing-library/jest-dom'
 
 describe('Article', () => {

@@ -1,6 +1,6 @@
 /* eslint-env jest */
 import { render, screen } from '@testing-library/react'
-import ExternalLink from './ExternalLink'
+import ExternalLink from '../../src/components/ExternalLink/ExternalLink'
 import '@testing-library/jest-dom'
 
 describe('ExternalLink', () => {
