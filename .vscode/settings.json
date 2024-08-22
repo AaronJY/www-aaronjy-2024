@@ -13,6 +13,7 @@
     "Hetzner",
     "Integra",
     "Levantine",
+    "opengraph",
     "Orangebus",
     "pipdig",
     "pubdate",
@@ -29,6 +30,9 @@
   "prettier.enable": false,
   "editor.defaultFormatter": "standard.vscode-standard",
   "[javascript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[javascriptreact]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   }
 }
