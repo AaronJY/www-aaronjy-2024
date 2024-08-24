@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 import ExternalLink from '@/components/ExternalLink/ExternalLink'
+import Link from 'next/link'
 
 export default function Home () {
   return (
@@ -11,18 +12,14 @@ export default function Home () {
       </Head>
 
       <section>
-        <h1>Hello!</h1>
+        <h1>Hello! 👋🏻</h1>
         <p>
           I&apos;m Aaron, a Brit living in Newcastle-upon-tyne, UK. I
           work professionally as a Software Engineer, and study
           languages, history and philosophy in my spare time.
         </p>
         <p>
-          This is my little corner of the web! I&apos;ve always had a habit of
-          &apos;lurking&apos; online; I barely interact with the content I
-          consume, and you&apos;ll rarely if ever catch me posting or commenting
-          on something. This little site endeavours to encourage me
-          to share a bit more about myself online.
+          I current work as a Lead Consultant at Hippo Digital, working on public sector project for the Department of Education. You can find out more about my work history <Link href='/cv'>on my CV</Link>.
         </p>
       </section>
 

@@ -17,10 +17,9 @@ function CVPage ({
     <DefaultLayout>
       <NextSeo title='CV' />
       <section>
-        <h1>CV</h1>
+        <h1>CV 💼</h1>
       </section>
       <section>
-        {/* eslint-disable-next-line react/jsx-pascal-case */}
         <Cv
           competencies={competencies}
           education={education}

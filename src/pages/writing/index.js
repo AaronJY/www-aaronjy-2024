@@ -23,7 +23,7 @@ export default function Writing ({ entries, urlPrefix }) {
         }
       />
       <section>
-        <h1>{title}</h1>
+        <h1>{title} ✍🏻</h1>
         <p>{description}</p>
       </section>
 
