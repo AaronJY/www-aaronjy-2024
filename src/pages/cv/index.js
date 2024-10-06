@@ -1,10 +1,10 @@
-import Cv from '@/components/Cv/Cv'
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 import React from 'react'
 import yaml from 'js-yaml'
 import fs from 'fs'
 import showdown from 'showdown'
 import { NextSeo } from 'next-seo'
+import Cv from '@/components/CV/CV'
 
 function CVPage ({
   competencies,
