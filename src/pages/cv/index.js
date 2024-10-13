@@ -4,9 +4,9 @@ import yaml from 'js-yaml'
 import fs from 'fs'
 import showdown from 'showdown'
 import { NextSeo } from 'next-seo'
-import Cv from '@/components/Cv/Cv'
+import Resume from '@/components/Resume/Resume'
 
-function CVPage ({
+function ResumePage ({
   competencies,
   education,
   certifications,
@@ -20,7 +20,7 @@ function CVPage ({
         <h1>CV 💼</h1>
       </section>
       <section>
-        <Cv
+        <Resume
           competencies={competencies}
           education={education}
           certifications={certifications}
@@ -51,4 +51,4 @@ export function getStaticProps () {
   }
 }
 
-export default CVPage
+export default ResumePage
