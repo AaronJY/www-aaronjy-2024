@@ -1,8 +1,8 @@
 import React from 'react'
 
-import style from './Cv.module.css'
+import style from './Resume.module.css'
 
-function Cv ({
+function Resume ({
   competencies,
   education,
   certifications,
@@ -42,7 +42,7 @@ function Cv ({
         <h2>Professional experience</h2>
 
         {experience.map((exp, i) => (
-          <CVWorkExperience
+          <WorkExperience
             key={i}
             employer={exp.employer}
             position={exp.position}
@@ -50,16 +50,16 @@ function Cv ({
             end={exp.end}
           >
             {exp.desc}
-          </CVWorkExperience>
+          </WorkExperience>
         ))}
       </div>
     </div>
   )
 }
 
-export default Cv
+export default Resume
 
-function CVWorkExperience ({ position, employer, start, end, children }) {
+function WorkExperience ({ position, employer, start, end, children }) {
   return (
     <div className={style['work-experience']}>
       <div>
