@@ -4,7 +4,7 @@ import yaml from 'js-yaml'
 import fs from 'fs'
 import showdown from 'showdown'
 import { NextSeo } from 'next-seo'
-import Cv from '@/components/CV/CV'
+import Cv from '@/components/Cv/Cv'
 
 function CVPage ({
   competencies,
