@@ -1,5 +1,6 @@
 ---
 title: Deploying aaronjy.me on a Google Storage bucket
+pubdate: 2024-05-01T00:00:00.000Z
 desc: This site is just a bunch of static assets hosted on a Google Storage
   bucket! Here's how it works...
 ---
