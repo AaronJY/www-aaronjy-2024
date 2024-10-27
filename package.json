@@ -18,6 +18,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
+    "feather-icons": "^4.29.2",
     "next": "^14.2.6",
     "next-seo": "^6.5.0",
     "react": "^18",

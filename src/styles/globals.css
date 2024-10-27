@@ -71,3 +71,16 @@ code:not(pre > code) {
   background-color: var(--color-default);
   color: var(--color-bg)
 }
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: inline-flex;
+}
+
+.icon-left {
+  margin-right: 5px;
+}

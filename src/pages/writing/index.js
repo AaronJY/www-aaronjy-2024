@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { getStaticEntryListProps } from '@/lib/content'
 import { NextSeo } from 'next-seo'
+import { formatDate } from '@/lib/helpers'
 
 export const getStaticProps = () => getStaticEntryListProps('./content/writing', '/writing/')
 
@@ -33,7 +34,7 @@ export default function Writing ({ entries, urlPrefix }) {
             <h2>
               <Link href={`${urlPrefix}${e.slug}`}>{e.attributes.title}</Link>
             </h2>
-            {!!e.attributes.pubdate && <p>{e.attributes.pubdate}</p>}
+            {!!e.attributes.pubdate && <p>{formatDate(e.attributes.pubdate)}</p>}
 
             <p>{e.attributes.desc}</p>
             <Link href={`${urlPrefix}${e.slug}`}>Read more</Link>
