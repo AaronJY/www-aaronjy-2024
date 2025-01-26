@@ -27,17 +27,23 @@ experience:
     start: Feb. 2024
     end: Present
     desc: >-
-      * Leading a small team of developers on a UK public sector project for the Department for Education (DfE)
+      * Leading a technical delivery on a UK public sector project for the Department for Education (DfE)
+      
+      * Designing and documenting architectural changes in line with GDS architectural and technology standards
+      
+      * Planning and managing releases to production
 
+      * Working with key stakeholders at both the project and policy level to explain, advise on and plan key decisions 
 
+      
       **Skills:** ASP.NET Core · Microsoft Azure · Azure Data Factory · Git · C# · Full-Stack Development · Umbraco · Web Development · Microsoft SQL Server · Cloud Development ·  Microservices · Technical Requirements · Agile Methodologies
   - position: Software Development Tutor
     employer: Yarbz Digital Ltd
     start: Sep. 2023
     end: Mar. 2024
-    desc: I teach students of all levels modern software development, including
+    desc: I taught students of all levels modern software development, including
       coding fundamentals, computer science theory and modern software
-      technologies. I also help them prepare for tech interviews!
+      technologies.
   - position: Freelance Software Consultant
     employer: Yarbz Digital Ltd
     start: Aug. 2021

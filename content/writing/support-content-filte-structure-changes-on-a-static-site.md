@@ -1,8 +1,7 @@
 ---
 title: Supporting content file structure changes on a static site
 pubdate: 2024-03-18T16:47:32.150Z
-desc: Static sites are great, but changing your content layout is like moving
-  furniture – fun for no one.
+desc: Static site generators (SSGs) convert complex site sources into HTML, CSS, and JS, allowing flexible hosting options. While they offer benefits like speed and low costs, updating content can be challenging for non-technical users. A solution involves assigning unique identifiers to articles and creating a URL mapping file to simplify restructuring and managing content links.
 ---
 Static site generators (SSGs) are great. They take your complex site source and distil it down to the web's native language: HTML, CSS and JS. You can host your files anywhere: in cloud-native storage buckets; on low-cost CPanel hosting; on global CDNs; your old Lenovo ThinkPad in your cupboard running an Apache server that hasn't been patched since 2008; the list goes on. Wanna go further and throw away your CMS? Cool, you can use markdown files and a text editor as your CMS. 
 

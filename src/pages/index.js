@@ -3,6 +3,9 @@ import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 import ExternalLink from '@/components/ExternalLink/ExternalLink'
 import Link from 'next/link'
 
+import { Title as WritingTitle, Description as WritingDescription } from './writing'
+import { Title as CvTitle, Description as CvDescription } from './cv'
+
 export default function Home () {
   return (
     <DefaultLayout>
@@ -21,6 +24,20 @@ export default function Home () {
         <p>
           I current work as a Lead Consultant at Hippo Digital, working on public sector project for the Department of Education. You can find out more about my work history <Link href='/cv'>on my CV</Link>.
         </p>
+
+        <div className='row'>
+          <div className='box'>
+            <Link href={'/writing'} className='box-title'>{WritingTitle}</Link>
+            <p className='box-text'>{WritingDescription}</p>
+            <Link href={'/writing'} className='box-link'>Read more...</Link>
+          </div>
+
+          <div className='box'>
+            <Link href={'/cv'} className='box-title'>{CvTitle}</Link>
+            <p className='box-text'>{CvDescription}</p>
+            <Link href={'/writing'} className='box-link'>Read more...</Link>
+          </div>
+        </div>
       </section>
 
       <section>

@@ -7,25 +7,26 @@ import { formatDate } from '@/lib/helpers'
 
 export const getStaticProps = () => getStaticEntryListProps('./content/writing', '/writing/')
 
-export default function Writing ({ entries, urlPrefix }) {
-  const title = 'Writing'
-  const description = 'Come get ya thoughts, ramblings, technical writing and other long-from text content here!'
+export const Title = 'Writing'
+export const Description = 'A collection of writing and musings on various topics that interest me, as well as technical writing.';
 
+export default function Writing ({ entries, urlPrefix }) {
+  
   return (
     <DefaultLayout>
       <NextSeo
-        title={title}
-        description={description}
+        title={Title}
+        description={Description}
         openGraph={
           {
-            title,
-            description
+            Title,
+            Description
           }
         }
       />
       <section>
-        <h1>{title} ✍🏻</h1>
-        <p>{description}</p>
+        <h1>{Title} ✍🏻</h1>
+        <p>{Description}</p>
       </section>
 
       <section>

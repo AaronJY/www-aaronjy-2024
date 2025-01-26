@@ -30,7 +30,7 @@
   "prettier.enable": false,
   "editor.defaultFormatter": "standard.vscode-standard",
   "[javascript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"

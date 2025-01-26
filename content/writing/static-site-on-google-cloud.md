@@ -1,8 +1,7 @@
 ---
 title: Deploying aaronjy.me on a Google Storage bucket
 pubdate: 2024-05-01T00:00:00.000Z
-desc: This site is just a bunch of static assets hosted on a Google Storage
-  bucket! Here's how it works...
+desc: "Google Cloud Storage is an effective solution for hosting static sites, offering a simple and scalable way to manage web assets. A manual deployment strategy involves four key steps: backing up existing files to a backup bucket, removing sensitive files for security, uploading the latest site files from the build directory, and invalidating Google’s global cache to ensure users access updated content."
 ---
 Google actually has [documentation](https://cloud.google.com/storage/docs/hosting-static-website) on how to deploy a static site to a storage bucket, but I wanted to talk about how I handle deployments, as Google doesn't covert that!
 

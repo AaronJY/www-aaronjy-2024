@@ -6,7 +6,10 @@ import showdown from 'showdown'
 import { NextSeo } from 'next-seo'
 import Resume from '@/components/Resume/Resume'
 
-function ResumePage ({
+export const Title = "CV";
+export const Description = "Read about my professional experience as a software engineer, core competencies, and certifications.";
+
+function ResumePage({
   competencies,
   education,
   certifications,
@@ -15,9 +18,15 @@ function ResumePage ({
 }) {
   return (
     <DefaultLayout>
-      <NextSeo title='CV' />
+      <NextSeo title={Title} description={Description} openGraph={
+        {
+          Title,
+          Description
+        }
+      } />
       <section>
-        <h1>CV 💼</h1>
+        <h1>{Title} 💼</h1>
+        <p>{Description}</p>
       </section>
       <section>
         <Resume
@@ -32,7 +41,7 @@ function ResumePage ({
   )
 }
 
-export function getStaticProps () {
+export function getStaticProps() {
   const content = fs.readFileSync('./content/pages/cv.yml', {
     encoding: 'utf-8'
   })

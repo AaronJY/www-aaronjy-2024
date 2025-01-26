@@ -84,3 +84,35 @@ code:not(pre > code) {
 .icon-left {
   margin-right: 5px;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.box {
+  flex-grow: 1;
+  /* border: 1px solid var(--color-default); */
+  /* padding: 1.2rem;  */
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: 0;
+  flex-direction: column;
+}
+
+.box-title {
+  font-weight: 600;
+}
+
+.box-text {
+  margin: 0.8rem 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .row {
+    flex-direction: column;
+  }
+}
