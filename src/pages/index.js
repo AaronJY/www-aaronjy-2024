@@ -27,15 +27,15 @@ export default function Home () {
 
         <div className='row'>
           <div className='box'>
-            <Link href={'/writing'} className='box-title'>{WritingTitle}</Link>
+            <Link href='/writing' className='box-title'>{WritingTitle}</Link>
             <p className='box-text'>{WritingDescription}</p>
-            <Link href={'/writing'} className='box-link'>Read more...</Link>
+            <Link href='/writing' className='box-link'>Read more...</Link>
           </div>
 
           <div className='box'>
-            <Link href={'/cv'} className='box-title'>{CvTitle}</Link>
+            <Link href='/cv' className='box-title'>{CvTitle}</Link>
             <p className='box-text'>{CvDescription}</p>
-            <Link href={'/writing'} className='box-link'>Read more...</Link>
+            <Link href='/writing' className='box-link'>Read more...</Link>
           </div>
         </div>
       </section>

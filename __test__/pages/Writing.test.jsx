@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import { render } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import Writing from '../../src/pages/writing'
+import Writing, { Title, Description } from '../../src/pages/writing'
 
 jest.mock('next/head', () => {
   return {
@@ -20,26 +20,26 @@ describe('Writing', () => {
 
   it('renders meta title', async () => {
     const { container } = render(getStubWritingComponent())
-    expect(container.querySelector('title')).toHaveTextContent('Writing')
+    expect(container.querySelector('title')).toHaveTextContent(Title)
   })
 
   it('renders opengraph title', () => {
     const { container } = render(getStubWritingComponent())
     expect(container.querySelector('meta[property="og:title"]'))
-      .toHaveAttribute('content', 'Writing')
+      .toHaveAttribute('content', Title)
   })
 
   it('renders meta description', () => {
     const { container } = render(getStubWritingComponent())
     expect(container.querySelector('meta[name="description"]'))
-      .toHaveAttribute('content', 'Come get ya thoughts, ramblings, technical writing and other long-from text content here!')
+      .toHaveAttribute('content', Description)
   })
 
   it('renders opengraph description', () => {
     const { container } = render(getStubWritingComponent())
 
     expect(container.querySelector('meta[property="og:description"]'))
-      .toHaveAttribute('content', 'Come get ya thoughts, ramblings, technical writing and other long-from text content here!')
+      .toHaveAttribute('content', Description)
   })
 })
 

@@ -2,6 +2,7 @@
 import { render } from '@testing-library/react'
 import Article from '../../src/components/Article/Article'
 import '@testing-library/jest-dom'
+import { formatDate } from '@/lib/helpers'
 
 describe('Article', () => {
   it('renders title', () => {
@@ -21,7 +22,7 @@ describe('Article', () => {
   it('renders pubdate if available', () => {
     const props = generateArticleProps()
     const { getByText } = render(<Article {...props} />)
-    const pubdateElement = getByText(props.attributes.pubdate)
+    const pubdateElement = getByText(formatDate(props.attributes.pubdate))
     expect(pubdateElement).toBeInTheDocument()
   })
 

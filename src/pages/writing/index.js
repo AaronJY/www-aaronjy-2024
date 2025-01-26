@@ -8,10 +8,9 @@ import { formatDate } from '@/lib/helpers'
 export const getStaticProps = () => getStaticEntryListProps('./content/writing', '/writing/')
 
 export const Title = 'Writing'
-export const Description = 'A collection of writing and musings on various topics that interest me, as well as technical writing.';
+export const Description = 'A collection of writing and musings on various topics that interest me, as well as technical writing.'
 
 export default function Writing ({ entries, urlPrefix }) {
-  
   return (
     <DefaultLayout>
       <NextSeo
