@@ -35,7 +35,7 @@ export default function Home () {
           <div className='box'>
             <Link href='/cv' className='box-title'>{CvTitle}</Link>
             <p className='box-text'>{CvDescription}</p>
-            <Link href='/writing' className='box-link'>Read more...</Link>
+            <Link href='/cv' className='box-link'>Read more...</Link>
           </div>
         </div>
       </section>
