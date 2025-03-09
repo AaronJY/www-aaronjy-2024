@@ -7,11 +7,11 @@ import { getStaticEntries } from '@/lib/content'
 
 export const getStaticProps = () => ({
   props: {
-    postEntries: getStaticEntries("content/writing")
+    postEntries: getStaticEntries('content/writing')
   }
 })
 
-export default function Home({ postEntries }) {
+export default function Home ({ postEntries }) {
   return (
     <DefaultLayout>
       <Head>
@@ -33,7 +33,7 @@ export default function Home({ postEntries }) {
 
       <section>
         <h2>Recent posts</h2>
-        <StaticContentList entries={postEntries} urlPrefix={"writing/"} />
+        <StaticContentList entries={postEntries} urlPrefix='writing/' />
       </section>
 
     </DefaultLayout>

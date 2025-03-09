@@ -2,7 +2,7 @@ import React from 'react'
 
 import style from './Footer.module.css'
 
-function Footer() {
+function Footer () {
   return (
     <footer className={style.footer} data-testid='footer'>
       <hr />
@@ -23,7 +23,6 @@ function Footer() {
           <small>2025 Aaron Yarborough</small>
         </div>
       </nav>
-
 
     </footer>
   )

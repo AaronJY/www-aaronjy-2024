@@ -6,28 +6,27 @@ import StaticContentList from '@/components/StaticContentList/StaticContentList'
 
 export const getStaticProps = () => ({
   props: {
-    postEntries: getStaticEntries("./content/writing")
+    postEntries: getStaticEntries('./content/writing')
   }
 })
 
 export const Title = 'Writing'
 
 export default function Writing ({ postEntries }) {
-
   return (
     <DefaultLayout>
       <NextSeo
         title={Title}
         openGraph={
           {
-            title: Title,
+            title: Title
           }
         }
       />
       <h1>{Title}</h1>
 
       <section>
-        <StaticContentList entries={postEntries} urlPrefix={'writing/'} />
+        <StaticContentList entries={postEntries} urlPrefix='writing/' />
       </section>
     </DefaultLayout>
   )

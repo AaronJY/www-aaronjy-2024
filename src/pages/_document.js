@@ -4,7 +4,7 @@ export default function Document () {
   return (
     <Html lang='en'>
       <Head>
-      <link rel="stylesheet" href="https://neat.joeldare.com/neat.css"/>
+        <link rel='stylesheet' href='https://neat.joeldare.com/neat.css' />
       </Head>
       <body>
         <Main />

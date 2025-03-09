@@ -20,11 +20,11 @@ function ResumePage ({
       <NextSeo
         title={Title} openGraph={
         {
-          title: Title,
+          title: Title
         }
       }
       />
-        <h1>{Title}</h1>
+      <h1>{Title}</h1>
       <section>
         <Resume
           competencies={competencies}

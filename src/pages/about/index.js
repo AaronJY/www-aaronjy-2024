@@ -1,7 +1,7 @@
-import ExternalLink from "@/components/ExternalLink/ExternalLink";
-import DefaultLayout from "@/layouts/DefaultLayout/DefaultLayout";
+import ExternalLink from '@/components/ExternalLink/ExternalLink'
+import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 
-export default function About() {
+export default function About () {
   return (
     <DefaultLayout>
       <h1>About me</h1>

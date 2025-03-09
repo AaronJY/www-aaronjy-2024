@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import React from 'react'
 
-function Article({ attributes, html }) {
+function Article ({ attributes, html }) {
   return (
     <>
       <h1>{attributes.title}</h1>
