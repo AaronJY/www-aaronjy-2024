@@ -11,7 +11,7 @@ function Resume ({
 }) {
   return (
     <div className={style.cv}>
-      <div>
+      <div className='sidebar'>
         <h2>Core competencies</h2>
         <ul>
           {competencies.sort().map((c, i) => (

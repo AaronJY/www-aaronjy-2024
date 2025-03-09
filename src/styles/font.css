@@ -3,7 +3,7 @@
  * Generated with Type Scale Generator
  */
 
-@import url('./vars.css');
+ @import url('./vars.css');
 
  :root {
   --base-size: 17px;
@@ -13,13 +13,12 @@
   --body-line-height: 1.5;
   --body-letter-spacing: normal;
   --body-color: var(--color-default);
-  --body-background: #FBFBFB;
   
   --heading-font: var(--body-font);
   --heading-weight: 700;
   --heading-line-height: 1.25;
   --heading-letter-spacing: normal;
-  --heading-color: #ff6b35;
+  --heading-color: var(--color-primary);
 }
 
 /* Base styles */
@@ -29,7 +28,6 @@ body {
   line-height: var(--body-line-height);
   letter-spacing: var(--body-letter-spacing);
   color: var(--body-color);
-  background: var(--body-background);
 }
 
 /* Type scale */

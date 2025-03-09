@@ -101,9 +101,25 @@ code:not(pre > code) {
   margin: 0.8rem 0;
 }
 
+.sidebar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+  }
+}
+
 @media only screen and (max-width: 640px) {
+  
+
   .row {
     flex-direction: column;
   }
 }
+
 
