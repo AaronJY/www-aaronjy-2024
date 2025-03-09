@@ -1,8 +1,6 @@
 name: Build and Test Next.js site
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ '*' ]  # Wildcard matches all branches
 
