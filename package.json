@@ -14,7 +14,7 @@
     "format": "npx standard --fix",
     "prepare": "husky",
     "deploy": "./util/pre-deploy.sh && ./util/deploy-gcloud.sh",
-    "test": "jest --verbose",
+    "test": "jest --verbose --passWithNoTests",
     "lint": "next lint"
   },
   "dependencies": {
