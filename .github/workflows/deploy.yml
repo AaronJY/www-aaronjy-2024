@@ -1,15 +1,13 @@
-name: Build and Test Next.js site
+name: Deploy site
 
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ '*' ]  # Wildcard matches all branches
 
   workflow_dispatch:
 
 jobs:
-  build-and-test:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,12 +28,11 @@ jobs:
       - name: Test
         run: npm run test 
 
-      - name: Cache Next.js build
-        uses: actions/cache@v3
+      - name: Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          path: |
-            ~/.npm
-            .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-
+            server: ${{ secrets.SFTP_HOST }}
+            username: ${{ secrets.SFTP_USERNAME }}
+            password: ${{ secrets.SFTP_PASSWORD }}
+            local-dir: "./out"
+            server-dir: "/root/www-aaronjy-me"
