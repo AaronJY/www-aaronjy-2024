@@ -4,8 +4,6 @@ pubdate: 2025-02-23T21:12:37.864Z
 desc: While writing a TCP game server in dotnet for a hobby project, I learned a few ways to improve the efficiency and scalability of the server while running into some performance issues. Here's what I learned!
 ---
 
-# Performance considerations when writing a TCP game server in dotnet
-
 While writing a TCP game server in dotnet for a hobby project (check it out [here](https://github.com/AaronJY/GServer)), I learned a few ways to improve the efficiency and scalability of the server while running into some performance issues.
 
 Here's what I learned!

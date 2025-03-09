@@ -7,9 +7,10 @@ function Header () {
   return (
     <header className={styles.header} data-testid='header'>
       <nav>
-        <Link href='/'>Home</Link>
-        <Link href='/writing'>Writing</Link>
-        <Link href='/cv'>CV</Link>
+        <Link href='/'>Home</Link>{', '}
+        <Link href='/writing'>Writing</Link>{', '}
+        <Link href='/cv'>CV</Link>{', '}
+        <Link href='/about'>About</Link>
       </nav>
     </header>
   )

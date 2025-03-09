@@ -7,7 +7,6 @@ import { NextSeo } from 'next-seo'
 import Resume from '@/components/Resume/Resume'
 
 export const Title = 'CV'
-export const Description = 'Read about my professional experience as a software engineer, core competencies, and certifications.'
 
 function ResumePage ({
   competencies,
@@ -19,17 +18,13 @@ function ResumePage ({
   return (
     <DefaultLayout>
       <NextSeo
-        title={Title} description={Description} openGraph={
+        title={Title} openGraph={
         {
-          Title,
-          Description
+          title: Title,
         }
       }
       />
-      <section>
-        <h1>{Title} 💼</h1>
-        <p>{Description}</p>
-      </section>
+        <h1>{Title}</h1>
       <section>
         <Resume
           competencies={competencies}
@@ -52,12 +47,14 @@ export function getStaticProps () {
 
   const MDConverter = new showdown.Converter()
 
+  // @ts-ignore
   data.experience = data.experience.map((exp) => ({
     ...exp,
     desc: MDConverter.makeHtml(exp.desc)
   }))
 
   return {
+    // @ts-ignore
     props: { ...data }
   }
 }

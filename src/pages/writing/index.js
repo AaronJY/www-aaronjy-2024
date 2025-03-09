@@ -1,45 +1,33 @@
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 import React from 'react'
-import Link from 'next/link'
-import { getStaticEntryListProps } from '@/lib/content'
+import { getStaticEntries } from '@/lib/content'
 import { NextSeo } from 'next-seo'
-import { formatDate } from '@/lib/helpers'
+import StaticContentList from '@/components/StaticContentList/StaticContentList'
 
-export const getStaticProps = () => getStaticEntryListProps('./content/writing', '/writing/')
+export const getStaticProps = () => ({
+  props: {
+    postEntries: getStaticEntries("./content/writing")
+  }
+})
 
 export const Title = 'Writing'
-export const Description = 'A collection of writing and musings on various topics that interest me, as well as technical writing.'
 
-export default function Writing ({ entries, urlPrefix }) {
+export default function Writing ({ postEntries }) {
+
   return (
     <DefaultLayout>
       <NextSeo
         title={Title}
-        description={Description}
         openGraph={
           {
-            Title,
-            Description
+            title: Title,
           }
         }
       />
-      <section>
-        <h1>{Title} ✍🏻</h1>
-        <p>{Description}</p>
-      </section>
+      <h1>{Title}</h1>
 
       <section>
-        {entries.map((e) => (
-          <div key={e.attributes.title}>
-            <h2>
-              <Link href={`${urlPrefix}${e.slug}`}>{e.attributes.title}</Link>
-            </h2>
-            {!!e.attributes.pubdate && <p>{formatDate(e.attributes.pubdate)}</p>}
-
-            <p>{e.attributes.desc}</p>
-            <Link href={`${urlPrefix}${e.slug}`}>Read more</Link>
-          </div>
-        ))}
+        <StaticContentList entries={postEntries} urlPrefix={'writing/'} />
       </section>
     </DefaultLayout>
   )

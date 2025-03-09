@@ -35,5 +35,8 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "liveServer.settings.multiRootWorkspaceName": "www-aaronjy-2024"
+  "liveServer.settings.multiRootWorkspaceName": "www-aaronjy-2024",
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
 }

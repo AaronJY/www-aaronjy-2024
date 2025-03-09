@@ -52,11 +52,11 @@ export function getStaticEntryProps (contentPath, { params }) {
   return { props: { ...entry, attributes } }
 }
 
-export function getStaticEntryListProps (contentPath, urlPrefix) {
-  const fun = fs.readdirSync(contentPath, { withFileTypes: true })
-  const entries = fun.map((dirent) =>
+export function getStaticEntries(contentPath) {
+  const directoryItems = fs.readdirSync(contentPath, { withFileTypes: true });
+  return directoryItems.map((dirent) =>
     getMarkdownEntry(`${dirent.path}/${dirent.name}`)
-  ).sort((a, b) => new Date(b.attributes.pubdate) - new Date(a.attributes.pubdate))
-
-  return { props: { entries, urlPrefix } }
+  ).sort((a, b) => 
+    new Date(b.attributes.pubdate).getTime() - new Date(a.attributes.pubdate).getTime()
+  );
 }

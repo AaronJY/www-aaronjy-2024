@@ -4,7 +4,7 @@ export default function Document () {
   return (
     <Html lang='en'>
       <Head>
-        <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.7.1.min.css' />
+      <link rel="stylesheet" href="https://neat.joeldare.com/neat.css"/>
       </Head>
       <body>
         <Main />

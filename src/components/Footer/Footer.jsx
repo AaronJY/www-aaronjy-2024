@@ -2,47 +2,29 @@ import React from 'react'
 
 import style from './Footer.module.css'
 
-function Footer () {
+function Footer() {
   return (
     <footer className={style.footer} data-testid='footer'>
+      <hr />
       <nav>
-        <ul>
-          <li>
+        <div>
+          <span>
             <a href='#'>Back to top</a>
-          </li>
-          <li>
-            <a href='/static/pgp.txt'>pgp key</a>
-          </li>
-          <li>
+          </span>{', '}
+          <span>
+            <a href='/static/pgp.txt'>PGP key</a>
+          </span>{', '}
+          <span>
             <a href='mailto:me@aaronjy.me'>Send me an email</a>
-          </li>
-        </ul>
+          </span>
+        </div>
+
+        <div>
+          <small>2025 Aaron Yarborough</small>
+        </div>
       </nav>
 
-      <nav>
-        <ul>
-          <li>
-            <small>
-              2024 Aaron Yarborough, made with{' '}
-              <a
-                target='_blank'
-                rel='nofollow noopener noreferrer'
-                href='https://nextjs.org/'
-              >
-                Next.js
-              </a>{' '}
-              and{' '}
-              <a
-                target='_blank'
-                rel='nofollow noopener noreferrer'
-                href='https://yegor256.github.io/tacit/'
-              >
-                Tacit
-              </a>
-            </small>
-          </li>
-        </ul>
-      </nav>
+
     </footer>
   )
 }
