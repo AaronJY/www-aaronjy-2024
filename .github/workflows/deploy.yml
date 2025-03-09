@@ -28,12 +28,11 @@ jobs:
       - name: Test
         run: npm run test 
 
-      - name: Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: "Deploy"
+        uses: milanmk/actions-file-deployer@master
         with:
-            server: ${{ secrets.SFTP_HOST }}
-            port: 22 # Default SFTP port
-            username: ${{ secrets.SFTP_USERNAME }}
-            password: ${{ secrets.SFTP_PASSWORD }}
-            local-dir: "./out/"
-            server-dir: "/root/www-aaronjy-me/"
+          remote-protocol: "sftp"
+          remote-host: ${{ secrets.SFTP_HOST }}
+          remote-user: ${{ secrets.SFTP_USERNAME }}
+          remote-password: ${{ secrets.SFTP_PASSWORD }}
+          remote-path: "/root/www-aaronjy-me/"
