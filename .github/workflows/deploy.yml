@@ -34,5 +34,5 @@ jobs:
             server: ${{ secrets.SFTP_HOST }}
             username: ${{ secrets.SFTP_USERNAME }}
             password: ${{ secrets.SFTP_PASSWORD }}
-            local-dir: "./out"
-            server-dir: "/root/www-aaronjy-me"
+            local-dir: "./out/"
+            server-dir: "/root/www-aaronjy-me/"
